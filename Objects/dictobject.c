@@ -4313,7 +4313,7 @@ dict_get_impl(PyDictObject *self, PyObject *key, PyObject *default_value)
 }
 
 static PyObject *
-dict_deepget_impl(PyDictObject *self, PyObject * const *keylist, PyObject *default_value)
+dict_deepget_impl(PyDictObject *self, PyObject *keylist, PyObject *default_value)
 {
     Py_ssize_t n = PyList_GET_SIZE(keylist);
     if (n == 0) {

@@ -123,7 +123,7 @@ PyDoc_STRVAR(dict_deepget__doc__,
     {"deepget", _PyCFunction_CAST(dict_deepget), METH_FASTCALL, dict_deepget__doc__},
 
 static PyObject *
-dict_deepget_impl(PyDictObject *self, PyObject * const *keylist, PyObject *default_value);
+dict_deepget_impl(PyDictObject *self, PyObject *keylist, PyObject *default_value);
 
 static PyObject *
 dict_deepget(PyObject *self, PyObject *const *args, Py_ssize_t nargs)
